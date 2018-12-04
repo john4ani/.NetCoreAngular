@@ -1,0 +1,15 @@
+﻿<div class="row">
+    <div class="product-info col-md-4 well well-sn" *ngFor="let p of products">
+        <div class="card bg-light p-1 m-1">
+            <img src="/img/me.jpg" class="img-thumbnail" alt="p.title"/>
+            <div class="product-name">{{p.title}}</div>
+            <ul>
+                <li>Price : {{ p.price | currency:"USD":true}}</li>
+                <li>Artist : {{p.artist}}</li>
+                <li>Title : {{p.title}}</li>
+                <li>Description : {{p.artDescription}}</li>
+            </ul>
+            <button id="buyButton" class="btn btn-success">Buy</button>
+        </div>
+    </div>    
+</div>

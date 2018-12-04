@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Shop";
+}
+@section Scripts
+    {
+    <script src="~/ClientApp/dist/runtime.js"></script>
+    <script src="~/ClientApp/dist/polyfills.js"></script>
+    <script src="~/ClientApp/dist/styles.js"></script>
+    <script src="~/ClientApp/dist/vendor.js"></script>
+    <script src="~/ClientApp/dist/main.js"></script>
+}
+
+<h2>Shop</h2>
+<the-shop></the-shop>
+@*<p>Count: @Model.Count()</p>
+    <div class="row">
+        @foreach (var p in Model)
+        {
+            <div class="col-md-3">
+                <div class="border bg-light rounded p-1">
+                    <h3>Mug</h3>
+                    <ul>
+                        <li>Title: @p.Title</li>
+                        <li>Price: $@p.Price</li>
+                    </ul>
+                    <button id="buyButton" class="btn btn-success">Buy</button>
+                </div>
+            </div>
+        }
+    </div>*@

@@ -1,0 +1,15 @@
+{
+  "ConnectionStrings": {
+    "SqlServerConnectionString": "server=(localdb)\\ProjectsV13;Database=StoreDb;Integrated Security=true;MultipleActiveResultSets=true;"
+  },
+  "Loggin": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "Tokens": {
+    "Key": "6575edfg:fgdg;dfg;",
+    "Issuer": "localhost",
+    "Audience": "users"
+  }
+}

@@ -73,11 +73,9 @@ namespace AgileTrackingSystem.Controllers
                     if (newOrder.OrderDate == DateTime.Now)
                         newOrder.OrderDate = DateTime.Now;
 
-                    _dBRepository.AddEntity(newOrder);
-                    if (_dBRepository.SaveAll())                    {
-                        
-                        return Created($"/api/orders/{newOrder.Id}", _mapper.Map<Order,OrderViewModel>(newOrder));
-                    }
+                    _dBRepository.AddOrder(newOrder);
+                    if (_dBRepository.SaveAll())                    
+                        return Created($"/api/orders/{newOrder.Id}", _mapper.Map<Order,OrderViewModel>(newOrder));                    
                 }
                 else return BadRequest(ModelState);
             }

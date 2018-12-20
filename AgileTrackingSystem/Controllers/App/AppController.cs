@@ -45,7 +45,7 @@ namespace AgileTrackingSystem.Controllers.App
             ViewBag.Title = "About Us";
             return View();
         }
-        [Authorize]
+        
         public IActionResult Shop()
         {
             var results = _dBRepository.GetAllProducts();

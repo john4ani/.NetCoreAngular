@@ -1,6 +1,6 @@
 {
   "ConnectionStrings": {
-    "SqlServerConnectionString": "server=(localdb)\\ProjectsV13;Database=StoreDb;Integrated Security=true;MultipleActiveResultSets=true;"
+    "SqlServerConnectionString": "server=ION\\SQLEXPRESS;Database=StoreDb;Integrated Security=true;MultipleActiveResultSets=true;"
   },
   "Loggin": {
     "LogLevel": {

@@ -19,6 +19,15 @@ namespace AgileTrackingSystem.Data
             _dBContext.Add(model);
         }
 
+        public void AddOrder(Order newOrder)
+        {
+            foreach (var item in newOrder.Items)
+            {
+                item.Product = _dBContext.Products.Find(item.Product.Id);
+            }
+            AddEntity(newOrder);
+        }
+
         public Order GetAllOrderById(string username, int id)
         {
             return _dBContext.Orders
